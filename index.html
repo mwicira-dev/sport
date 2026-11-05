@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="rw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OPSS Nyanza — amakuru, amarushanwa n'ibikorwa bya siporo mu mashuri ya Nyanza."
+    />
+    <meta name="theme-color" content="#102a21" />
+    <title>OPSS Nyanza | Siporo mu Mashuri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="OPSS Nyanza, ahabanza">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 3 43 14v20L24 45 5 34V14L24 3Z" stroke="currentColor" stroke-width="2" />
+              <path d="m14 29 6-14 5 11 4-7 5 10M13 34h22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span class="brand-copy"><strong>OPSS</strong><small>NYANZA · RWANDA</small></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Fungura menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Uruhande nyamukuru">
+          <a class="nav-link active" href="#home">Ahabanza</a>
+          <a class="nav-link" href="#news">Amakuru</a>
+          <a class="nav-link" href="#competitions">Amarushanwa</a>
+          <a class="nav-link" href="#sports">Imikino</a>
+          <a class="nav-link" href="#about">Abo turibo</a>
+          <a class="nav-cta" href="#contact">Twandikire <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-photo" role="img" aria-label="Abanyeshuri bakina umupira w'amaguru"></div>
+        <div class="hero-shade"></div>
+        <div class="container hero-content">
+          <div class="eyebrow eyebrow-light"><span class="live-dot"></span> UMURYANGO WA SIPORO MU MASHURI</div>
+          <h1>Impano zacu.<br /><span>Ejo hazaza hacu.</span></h1>
+          <p>Amakuru, amarushanwa n’ibikorwa bya siporo by’abanyeshuri bo mu Karere ka Nyanza.</p>
+          <div class="hero-actions">
+            <a class="button button-lime" href="#news">Menya amakuru <span aria-hidden="true">→</span></a>
+            <a class="hero-text-link" href="#about">Menya OPSS Nyanza <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-caption"><span class="caption-line"></span> Siporo itanga ubumenyi, ubuzima n’ubumwe.</div>
+        </div>
+        <div class="hero-index"><span>01</span> / 03</div>
+      </section>
+
+      <section class="stats-strip" aria-label="Ibyo OPSS Nyanza ihagarariye">
+        <div class="container stats-inner">
+          <div class="stat"><strong>01</strong><span>Impano imwe<br />ishobora guhindura byose</span></div>
+          <div class="stat"><strong>05<span>+</span></strong><span>Imikino<br />ishyigikiwe</span></div>
+          <div class="stat"><strong>RW</strong><span>Guteza imbere<br />siporo mu mashuri</span></div>
+          <div class="stats-note">GUKINA. KWIGA. GUKURA.<span>— Hamwe turatera imbere.</span></div>
+        </div>
+      </section>
+
+      <section class="section news-section" id="news">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow"><span class="eyebrow-mark"></span> IBIHANGAYIKISHIJE UYU MUNSI</div>
+              <h2>Amakuru <span>agezweho.</span></h2>
+              <p>Menya ibiri kubera muri siporo y’amashuri ya Nyanza.</p>
+            </div>
+            <a class="text-link" href="#news">Amakuru yose <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="filters" role="group" aria-label="Shungura amakuru">
+            <button class="filter-chip selected" type="button" data-filter="all">Byose</button>
+            <button class="filter-chip" type="button" data-filter="football">Umupira w’amaguru</button>
+            <button class="filter-chip" type="button" data-filter="volleyball">Volleyball</button>
+            <button class="filter-chip" type="button" data-filter="basketball">Basketball</button>
+            <button class="filter-chip" type="button" data-filter="athletics">Imikino ngororamubiri</button>
+            <button class="filter-chip" type="button" data-filter="school">Ubuzima bw’ishuri</button>
+          </div>
+          <div class="news-grid" id="news-grid" aria-live="polite"></div>
+          <p class="content-note" id="news-status">Aya ni amakuru y’icyitegererezo. Shyiramo inkuru zemejwe n’ubuyobozi bwa OPSS Nyanza.</p>
+        </div>
+      </section>
+
+      <section class="competition-section" id="competitions">
+        <div class="container competition-layout">
+          <div class="competition-intro">
+            <div class="eyebrow eyebrow-light"><span class="eyebrow-mark"></span> UMURIRO WO GUHATANA</div>
+            <h2>Amarushanwa<br />atwubaka <span>twese.</span></h2>
+            <p>Aho impano zihurira, ubucuti bugakomera, kandi buri munyeshuri akabona umwanya wo kugaragaza icyo ashoboye.</p>
+            <a class="button button-outline" href="#contact">Tumenyeshe irushanwa <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="competition-list-wrap">
+            <div class="competition-list-heading">
+              <span>Gahunda y’amarushanwa</span><span class="schedule-label"><i></i> ITEGEREJWE</span>
+            </div>
+            <div class="competition-list" id="competition-list"></div>
+            <p class="competition-footnote">* Gahunda n’amatariki byemezwa n’abategura amarushanwa.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section sports-section" id="sports">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow"><span class="eyebrow-mark"></span> SHAKA UMUKINO WAWE</div>
+              <h2>Imikino itandukanye.<br /><span>Intego imwe.</span></h2>
+            </div>
+            <p class="heading-aside">Siporo ifasha abanyeshuri kugira ubuzima bwiza, gukorera hamwe no kumenya guhatana mu buryo bwiza.</p>
+          </div>
+          <div class="sports-grid">
+            <a class="sport-card sport-football" href="#news" data-sport-filter="football">
+              <span class="sport-number">01 / IMIKINO</span><span class="sport-arrow" aria-hidden="true">↗</span>
+              <div><h3>Umupira<br />w’amaguru</h3><span class="sport-discover">Menya byinshi <b>→</b></span></div>
+            </a>
+            <a class="sport-card sport-volleyball" href="#news" data-sport-filter="volleyball">
+              <span class="sport-number">02 / IMIKINO</span><span class="sport-arrow" aria-hidden="true">↗</span>
+              <div><h3>Volley-<br />ball</h3><span class="sport-discover">Menya byinshi <b>→</b></span></div>
+            </a>
+            <a class="sport-card sport-basketball" href="#news" data-sport-filter="basketball">
+              <span class="sport-number">03 / IMIKINO</span><span class="sport-arrow" aria-hidden="true">↗</span>
+              <div><h3>Basket-<br />ball</h3><span class="sport-discover">Menya byinshi <b>→</b></span></div>
+            </a>
+            <a class="sport-card sport-athletics" href="#news" data-sport-filter="athletics">
+              <span class="sport-number">04 / IMIKINO</span><span class="sport-arrow" aria-hidden="true">↗</span>
+              <div><h3>Imikino<br />ngororamubiri</h3><span class="sport-discover">Menya byinshi <b>→</b></span></div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-image" role="img" aria-label="Abanyeshuri bari mu myitozo ya siporo"></div>
+        <div class="about-copy">
+          <div class="eyebrow eyebrow-light"><span class="eyebrow-mark"></span> AHO DUKOMOKA</div>
+          <h2>Siporo ni irerero<br />ry’ejo <span>hazaza.</span></h2>
+          <p>OPSS Nyanza ni urubuga ruhuza umuryango wa siporo mu mashuri. Dusangiza amakuru, ibikorwa n’ibyishimo by’abanyeshuri, abarezi n’abatoza.</p>
+          <p class="about-quote">“Iyo dukinnye hamwe, dukura hamwe.”</p>
+          <a class="text-link text-link-light" href="#contact">Duhurire hamwe <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="container contact-layout">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-mark"></span> TUGANIRE</div>
+            <h2>Ufite inkuru?<br /><span>Twandikire.</span></h2>
+            <p>Ohereza ubutumwa bugufi ku buyobozi bwa OPSS Nyanza. Tumenyeshe amakuru, irushanwa cyangwa igitekerezo ufite.</p>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <label for="contact-name">Amazina yawe</label>
+            <input id="contact-name" name="name" type="text" placeholder="Andika amazina yawe" required />
+            <label for="contact-category">Ubutumwa bujyanye na</label>
+            <select id="contact-category" name="category" required>
+              <option value="" disabled selected>Hitamo ubwoko bw’ubutumwa</option>
+              <option>Amakuru ya siporo</option>
+              <option>Irushanwa</option>
+              <option>Ikindi gitekerezo</option>
+            </select>
+            <label for="contact-message">Ubutumwa bugufi</label>
+            <textarea id="contact-message" name="message" rows="3" placeholder="Andika ubutumwa bwawe..." required></textarea>
+            <button class="button button-dark" type="submit">Bika ubutumwa <span aria-hidden="true">→</span></button>
+            <p class="form-feedback" id="form-feedback" role="status"></p>
+            <p class="form-note" id="contact-note">Ubutumwa bwoherezwa ku buyobozi iyo urubuga rwashyizwe kuri Supabase.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <a class="brand footer-brand" href="#home">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 3 43 14v20L24 45 5 34V14L24 3Z" stroke="currentColor" stroke-width="2" /><path d="m14 29 6-14 5 11 4-7 5 10M13 34h22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg></span>
+          <span class="brand-copy"><strong>OPSS</strong><small>NYANZA · RWANDA</small></span>
+        </a>
+        <p>Gukina. Kwiga. Gukura.<br />Siporo y’amashuri, ejo hazaza heza.</p>
+        <a class="back-top" href="#home">Subira hejuru ↑</a>
+      </div>
+      <div class="container footer-bottom"><span>© <span id="current-year"></span> OPSS Nyanza</span><span>Urubuga rw’umuryango wa siporo mu mashuri.</span><a class="footer-admin-link" href="admin.html">Admin</a></div>
+    </footer>
+  </body>
+</html>
